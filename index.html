@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Head Start Parent & Family Engagement Conference | Active Parenting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Active Parenting resources for Head Start programs attending the NHSA Parent and Family Engagement Conference. See how our evidence-based parenting curricula support the PFCE Framework."
+  />
+
+  <style>
+    /* --------- BASE --------- */
+    :root {
+      --blue: #0f75bc;
+      --orange: #f36f21;
+      --gold: #f9b233;
+      --purple: #510c76;
+      --dark: #1d2630;
+      --light-bg: #f5f7fb;
+      --card-bg: #ffffff;
+      --border-soft: #dde3f0;
+      --accent-pill: #e6f0fb;
+      --radius-lg: 18px;
+      --shadow-soft: 0 14px 40px rgba(15, 27, 51, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      background: var(--light-bg);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 16px 16px 56px;
+    }
+
+    /* --------- HERO --------- */
+    .hero {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--orange) 40%, var(--blue) 100%);
+      border-radius: 24px;
+      padding: 32px 24px;
+      color: #ffffff;
+      box-shadow: var(--shadow-soft);
+      margin: 16px 0 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-main {
+      flex: 1 1 260px;
+      min-width: 0;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #ffffff;
+      opacity: 0.9;
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 4vw, 34px);
+      line-height: 1.1;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      max-width: 520px;
+      margin-bottom: 18px;
+    }
+
+    .hero-meta {
+      font-size: 13px;
+      opacity: 0.94;
+      margin-bottom: 16px;
+    }
+
+    .hero-meta span {
+      display: inline-block;
+      margin-right: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+      transition: transform 0.08s ease, box-shadow 0.08s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary span {
+      margin-left: 6px;
+      font-size: 16px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+      text-decoration: none;
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      color: #ffffff;
+      font-size: 13px;
+      backdrop-filter: blur(4px);
+      text-decoration: none;
+    }
+
+    .hero-side {
+      flex: 0 0 260px;
+      max-width: 320px;
+      width: 100%;
+    }
+
+    .hero-panel {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 16px 14px 14px;
+      font-size: 13px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .hero-panel-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.9;
+    }
+
+    .hero-panel ul {
+      list-style: disc;
+      padding-left: 18px;
+      margin: 8px 0 0;
+    }
+
+    .hero-panel li + li {
+      margin-top: 4px;
+    }
+
+    /* --------- PILL NAV (from email style) --------- */
+    .pill-nav-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0 26px;
+    }
+
+    .pill-nav {
+      display: inline-flex;
+      align-items: stretch;
+      background: linear-gradient(90deg, #3db5e6, #510c76);
+      border-radius: 999px;
+      padding: 4px;
+      max-width: 100%;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .pill-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pill-nav a {
+      font-size: 14px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      white-space: nowrap;
+      padding: 8px 14px;
+      border-radius: 999px;
+    }
+
+    .pill-nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      text-decoration: none;
+    }
+
+    /* --------- SECTIONS --------- */
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section-header {
+      margin-bottom: 12px;
+    }
+
+    .section-kicker {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6a7280;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+
+    .section-intro {
+      font-size: 14px;
+      color: #4f5a6b;
+      max-width: 760px;
+    }
+
+    /* GRID CARDS */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 16px 16px 14px;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.04);
+      font-size: 14px;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #4f5a6b;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--accent-pill);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+
+    .list-compact {
+      font-size: 13px;
+      color: #4f5a6b;
+      padding-left: 18px;
+      margin-top: 8px;
+    }
+
+    .list-compact li + li {
+      margin-top: 4px;
+    }
+
+    /* FORM SECTION */
+    .form-section {
+      margin-top: 8px;
+    }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .form-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 18px 18px 16px;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .form-card h2 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .form-card p {
+      font-size: 13px;
+      color: #4f5a6b;
+      margin-bottom: 10px;
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: #7b8394;
+      margin-top: 6px;
+    }
+
+    .placeholder-box {
+      border-radius: 14px;
+      border: 1px dashed #c5cee0;
+      padding: 14px;
+      background: #f7f9ff;
+      font-size: 13px;
+      color: #4f5a6b;
+    }
+
+    .placeholder-box code {
+      font-size: 12px;
+      background: #e7eefc;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    .aside-note {
+      font-size: 12px;
+      color: #4f5a6b;
+    }
+
+    .aside-note strong {
+      font-weight: 600;
+    }
+
+    .aside-note ul {
+      margin-top: 6px;
+      padding-left: 18px;
+    }
+
+    .aside-note li + li {
+      margin-top: 4px;
+    }
+
+    /* FEATURED PROGRAM SECTION */
+    .feature-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+      gap: 20px;
+      margin-top: 18px;
+      align-items: center;
+    }
+
+    .feature-image-wrap {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid var(--border-soft);
+      padding: 10px;
+      box-shadow: 0 10px 30px rgba(16,24,40,0.06);
+    }
+
+    .feature-image-wrap img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--blue);
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .btn-outline:hover {
+      background: var(--blue);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    /* ABOUT ACTIVE PARENTING SECTION */
+    .about-grid-top {
+      margin-top: 18px;
+    }
+
+    .about-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+    .about-icon.eb { background:#5c2d91; }
+    .about-icon.vb { background:#f9b233; }
+    .about-icon.int { background:#d81b60; }
+
+    .about-approach {
+      margin-top: 18px;
+    }
+
+    /* TEAM CARDS */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .team-card {
+      background:#ffffff;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+      border:1px solid #ece3ff;
+      padding: 18px 16px 16px;
+      position: relative;
+    }
+
+    .team-card::before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:4px;
+      border-top-left-radius:18px;
+      border-top-right-radius:18px;
+      background:linear-gradient(90deg,#f9b233,#f36f21,#0f75bc);
+    }
+
+    .team-avatar-wrap {
+      display:flex;
+      justify-content:center;
+      margin-top:4px;
+      margin-bottom:8px;
+    }
+
+    .team-avatar {
+      width:90px;
+      height:90px;
+      border-radius:999px;
+      padding:4px;
+      background:conic-gradient(from 160deg,#f9b233,#f36f21,#0f75bc,#f9b233);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .team-avatar img {
+      width:100%;
+      height:100%;
+      border-radius:999px;
+      border:3px solid #ffffff;
+      object-fit:cover;
+    }
+
+    .team-name {
+      text-align:center;
+      font-weight:700;
+      font-size:14px;
+      margin-top:6px;
+    }
+
+    .team-title {
+      text-align:center;
+      font-size:12px;
+      color:#667085;
+      margin-bottom:8px;
+    }
+
+    .team-btn {
+      display:block;
+      width:100%;
+      text-align:center;
+      padding:9px 10px;
+      border-radius:999px;
+      background:#0f75bc;
+      color:#ffffff;
+      font-size:13px;
+      font-weight:600;
+      text-decoration:none;
+      margin-bottom:8px;
+    }
+
+    .team-btn.micole { background:#d7263d; }
+    .team-btn.bradley { background:#f9b233; color:#1d2630; }
+    .team-btn.eryn { background:#3db5e6; }
+
+    .team-contact {
+      font-size:12px;
+      text-align:center;
+      color:#1d2630;
+    }
+
+    .team-contact a {
+      color:#3a8ed8;
+      text-decoration:none;
+    }
+
+    /* QUICK LINKS */
+    .quick-links-grid {
+      display:grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap:14px;
+      margin-top:16px;
+    }
+
+    .quick-link-card {
+      background:#ffffff;
+      border-radius:16px;
+      padding:10px 14px;
+      box-shadow:0 8px 22px rgba(16,24,40,0.06);
+      position:relative;
+    }
+
+    .quick-link-card::before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      height:3px;
+      border-top-left-radius:16px;
+      border-top-right-radius:16px;
+    }
+
+    .ql-red::before { background:#d7263d; }
+    .ql-blue::before { background:#3a8ed8; }
+    .ql-orange::before { background:#f7941d; }
+    .ql-teal::before { background:#0f9d58; }
+    .ql-purple::before { background:#510c76; }
+    .ql-gold::before { background:#f9b233; }
+
+    .quick-link-card a {
+      display:block;
+      font-size:14px;
+      font-weight:600;
+      color:#1d2630;
+      text-align:center;
+      padding-top:4px;
+      text-decoration:none;
+    }
+
+    /* SOCIAL / FOOTER */
+    .social-row {
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      margin-top:16px;
+    }
+
+    .social-row a img {
+      width:32px;
+      height:32px;
+      display:block;
+    }
+
+    .corp-footer {
+      margin-top:28px;
+      background:#510c76;
+      color:#ffffff;
+      border-radius:18px;
+      padding:18px 18px 14px;
+      text-align:center;
+    }
+
+    .corp-footer .logo {
+      margin-bottom:10px;
+    }
+
+    .corp-footer img {
+      max-width:220px;
+      height:auto;
+    }
+
+    .corp-footer-links {
+      font-size:12px;
+      margin-bottom:6px;
+    }
+
+    .corp-footer-links a {
+      color:#ffffff;
+      margin:0 6px;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .corp-footer small {
+      display:block;
+      font-size:11px;
+      opacity:0.9;
+      margin-top:4px;
+    }
+
+    footer {
+      margin-top:20px;
+      font-size:11px;
+      color:#7b8394;
+      padding-top:8px;
+    }
+
+    footer a {
+      color:var(--blue);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        padding: 24px 18px;
+      }
+
+      .form-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .feature-layout {
+        grid-template-columns:minmax(0,1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .grid-3 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .team-grid {
+        grid-template-columns:minmax(0,1fr);
+      }
+
+      .quick-links-grid {
+        grid-template-columns:minmax(0,1fr);
+      }
+
+      .hero {
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-main">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Head Start Parent &amp; Family Engagement Conference
+        </div>
+        <h1>Bring Active Parenting Home from the Conference</h1>
+        <p class="hero-subtitle">
+          Stop by our booth and use this page to access sample lessons, implementation guides, and follow-up support
+          tailored for Head Start and Early Head Start programs.
+        </p>
+        <div class="hero-meta">
+          <span><strong>Hosted by:</strong> NHSA</span>
+          <span><strong>Focus:</strong> Parent &amp; Family Engagement</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#featured-program" class="btn-primary">
+            See our Head Start program <span>↓</span>
+          </a>
+          <a href="#form" class="btn-ghost">
+            Share your info for follow-up
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="hero-panel">
+          <div class="hero-panel-title">When you scan at the booth</div>
+          <ul>
+            <li>Quick access to digital samples</li>
+            <li>Implementation ideas linked to the PFCE Framework</li>
+            <li>Optional follow-up consult for your program</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- PILL NAV (Programs / Training / Research / Blog) -->
+    <div class="pill-nav-wrap">
+      <nav class="pill-nav" aria-label="Active Parenting primary links">
+        <a href="https://activeparenting.com/product-category/for-leaders/parenting-curriculums-for-leaders/products-at-a-glance-leaders/" target="_blank" rel="noopener noreferrer">
+          Programs
+        </a>
+        <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/leader-training/" target="_blank" rel="noopener noreferrer">
+          Training
+        </a>
+        <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/" target="_blank" rel="noopener noreferrer">
+          Research
+        </a>
+        <a href="https://activeparenting.com/blog/" target="_blank" rel="noopener noreferrer">
+          Blog
+        </a>
+      </nav>
+    </div>
+
+    <!-- SECTION: HOW WE FIT THE PFCE FRAMEWORK -->
+    <section class="section" id="pfce">
+      <div class="section-header">
+        <div class="section-kicker">Head Start alignment</div>
+        <h2 class="section-title">How Active Parenting supports the PFCE Framework</h2>
+        <p class="section-intro">
+          The Head Start Parent, Family, and Community Engagement (PFCE) Framework is a road map for building strong,
+          goal-oriented relationships with families. Active Parenting curricula are designed to help programs strengthen
+          key family outcomes like well-being, positive parent-child relationships, and families as lifelong educators.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="pill">Family well-being</div>
+          <h3>Stress, routines, and resilience</h3>
+          <p>
+            Lessons help parents build routines, problem-solve family challenges, and practice healthy communication,
+            which supports mental health, daily functioning, and stability at home.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="pill">Parent-child relationships</div>
+          <h3>Positive, developmentally appropriate tools</h3>
+          <p>
+            Concrete skills like encouragement, logical consequences, and active listening help parents strengthen
+            attachment and reduce power struggles in ways that fit each child’s age and stage.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="pill">Families as educators</div>
+          <h3>Parents as children’s first teachers</h3>
+          <p>
+            Activities and take-home practice sheets give families simple ways to support learning, social-emotional
+            skills, and school readiness in everyday moments.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: FEATURED PROGRAM FOR HEAD START -->
+    <section class="section" id="featured-program">
+      <div class="section-header">
+        <div class="section-kicker">Featured Head Start program</div>
+        <h2 class="section-title">Active Parenting: First Five Years</h2>
+        <p class="section-intro">
+          For many Head Start and Early Head Start grantees, <strong>Active Parenting: First Five Years</strong> is the
+          go-to curriculum for supporting families with children from birth to age five. It blends video, discussion,
+          and take-home activities to help caregivers build nurturing, structured, and developmentally appropriate
+          homes during the earliest years.
+        </p>
+      </div>
+
+      <div class="feature-layout">
+        <div class="feature-image-wrap">
+          <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/Active-Parenting-First-Five-Years-Program-Kit-1680.png"
+               alt="Active Parenting: First Five Years Program Kit">
+        </div>
+        <div>
+          <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">Why First Five Years works for Head Start</h3>
+          <ul class="list-compact">
+            <li>Age-appropriate video vignettes that reflect real-life parenting situations.</li>
+            <li>Flexible formats for home visits, small groups, or family nights.</li>
+            <li>Parent’s Guides with simple activities that connect home routines to school readiness.</li>
+            <li>Leader’s materials that make it easy to train new facilitators and keep quality consistent.</li>
+          </ul>
+          <a class="btn-outline"
+             href="https://activeparenting.com/product/first-five-years-of-parenting/"
+             target="_blank" rel="noopener noreferrer">
+            View First Five Years program details
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROGRAMS HIGHLIGHT -->
+    <section class="section" id="resources">
+      <div class="section-header">
+        <div class="section-kicker">For Head Start &amp; Early Head Start</div>
+        <h2 class="section-title">Curricula that work in real-world Head Start settings</h2>
+        <p class="section-intro">
+          From home-based services to center-based parent workshops, Active Parenting programs can support your
+          Parent, Family, and Community Engagement goals across age levels and formats.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3>Core Active Parenting programs</h3>
+          <ul class="list-compact">
+            <li><strong>Active Parenting: First Five Years</strong> for parents of children birth–5</li>
+            <li><strong>Active Parenting 4th Edition</strong> for parents of children ages 5–12</li>
+            <li><strong>Active Parenting of Teens</strong> for parents and caregivers of adolescents</li>
+            <li><strong>Special-focus programs</strong> that address topics such as divorce, school success, and more</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Flexible implementation options</h3>
+          <ul class="list-compact">
+            <li>In-person or virtual groups</li>
+            <li>Home-based visits with video and discussion</li>
+            <li>Short family nights or ongoing series</li>
+            <li>English and Spanish materials available for many programs</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: ABOUT ACTIVE PARENTING (from Canva style) -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">About Active Parenting</div>
+        <h2 class="section-title">Evidence-based, video-based, and interactive</h2>
+        <p class="section-intro">
+          Active Parenting has provided evidence-based, video-based parenting education since 1983. Our programs are
+          used in schools, community agencies, courts, and Head Start programs across the country.
+        </p>
+      </div>
+
+      <div class="grid-3 about-grid-top">
+        <article class="card">
+          <div class="about-icon eb">✓</div>
+          <h3>Evidence-Based</h3>
+          <p>
+            Our programs are backed by research and proven effective through studies and real-world implementation in
+            diverse communities.
+          </p>
+        </article>
+        <article class="card">
+          <div class="about-icon vb">▶</div>
+          <h3>Video-Based</h3>
+          <p>
+            Brief video vignettes with professional actors model key skills and show real-life situations that families
+            recognize and want to talk about.
+          </p>
+        </article>
+        <article class="card">
+          <div class="about-icon int">👥</div>
+          <h3>Interactive</h3>
+          <p>
+            Sessions are designed for engagement through group discussion, role-playing, and activities that reinforce
+            learning and build connection.
+          </p>
+        </article>
+      </div>
+
+      <div class="about-approach card">
+        <h3 style="margin-bottom:6px;">Our approach</h3>
+        <p style="font-size:13px;color:#4f5a6b;margin-bottom:8px;">
+          For over 40 years, we’ve found that the most effective and cost-effective way to teach parenting education
+          includes:
+        </p>
+        <ul class="list-compact">
+          <li>Brief video vignettes using professional actors to model both pitfalls and positive skills.</li>
+          <li>Skill modeling embedded in slide presentations that are easy for leaders to use.</li>
+          <li>Guided group discussion and interactive activities.</li>
+          <li>Parent’s Guides with home activities to reinforce learning between sessions.</li>
+          <li>Step-by-step Leader’s Guides to support new and experienced facilitators.</li>
+        </ul>
+        <p style="font-size:13px;color:#4f5a6b;margin-top:8px;">
+          Our programs are trusted by judges, juvenile courts, schools, and social service agencies across the country
+          for their effectiveness and engaging approach.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION: FORM -->
+    <section class="section form-section" id="form">
+      <div class="section-header">
+        <div class="section-kicker">Stay connected</div>
+        <h2 class="section-title">Get samples, pricing, and implementation support</h2>
+        <p class="section-intro">
+          Share your information below to receive digital samples, ideas for aligning Active Parenting with your program
+          goals, and an optional follow-up conversation after the conference.
+        </p>
+      </div>
+
+      <div class="form-layout">
+        <div class="form-card">
+          <h2>Conference follow-up form</h2>
+          <p>
+            Use this form if you scanned our code at the booth or are viewing this page with your team. You can request
+            sample access, quotes, and support tailored to your site’s needs.
+          </p>
+
+          <!-- ========= PASTE YOUR FORM EMBED BELOW ========= -->
+          <div class="placeholder-box">
+            <strong>Form embed goes here.</strong><br /><br />
+            Replace this box with your Constant Contact, HubSpot, or other form embed code.<br /><br />
+            For example:<br />
+            <code>&lt;!-- Constant Contact or HubSpot form embed --&gt;</code>
+          </div>
+          <!-- ========= END FORM EMBED PLACEHOLDER ========= -->
+
+          <p class="form-note">
+            Your information will be used to follow up with you about Active Parenting programs and Head Start-focused
+            implementation ideas. You can update your preferences at any time.
+          </p>
+        </div>
+
+        <aside class="aside-note">
+          <strong>Suggested form fields:</strong>
+          <ul>
+            <li>Name and role (e.g., Family Services, Education, Home-based)</li>
+            <li>Program name and location</li>
+            <li>Which ages you serve (Prenatal–3, 3–5, K–5, teens)</li>
+            <li>Interest area (samples, pricing, training, implementation planning)</li>
+            <li>Preferred follow-up method (email, phone, virtual meeting)</li>
+          </ul>
+          <p style="margin-top:8px;">
+            Tip: If you’re using HubSpot or Constant Contact, paste their embed script into the box on the left so new
+            contacts flow straight into your system.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SECTION: CONNECT WITH OUR TEAM -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">Connect with our team</div>
+        <h2 class="section-title">We’re here to help you plan</h2>
+        <p class="section-intro">
+          Whether you are new to Active Parenting or expanding an existing initiative, our team can help you select
+          programs, schedule training, and align with your Head Start performance standards.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Micole -->
+        <article class="team-card">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar">
+              <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/30.png" alt="Micole Mason">
+            </div>
+          </div>
+          <div class="team-name">Micole Mason</div>
+          <div class="team-title">Sales &amp; Training Manager</div>
+          <a class="team-btn micole"
+             href="https://activeparenting.my.canva.site/meet-our-team"
+             target="_blank" rel="noopener noreferrer">
+            Book a meeting
+          </a>
+          <div class="team-contact">
+            800-825-0060 ext. 120<br>
+            cell: 470-504-3478<br>
+            <a href="mailto:Micole@ActiveParenting.com">Micole@ActiveParenting.com</a>
+          </div>
+        </article>
+
+        <!-- Bradley -->
+        <article class="team-card">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar">
+              <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/28.png" alt="Bradley Lampkins">
+            </div>
+          </div>
+          <div class="team-name">Bradley Lampkins</div>
+          <div class="team-title">Educational Consultant</div>
+          <a class="team-btn bradley"
+             href="https://activeparenting.my.canva.site/meet-our-team"
+             target="_blank" rel="noopener noreferrer">
+            Book a meeting
+          </a>
+          <div class="team-contact">
+            800-825-0060 ext. 146<br>
+            cell: 404-719-0661<br>
+            <a href="mailto:Bradley@ActiveParenting.com">Bradley@ActiveParenting.com</a>
+          </div>
+        </article>
+
+        <!-- Eryn -->
+        <article class="team-card">
+          <div class="team-avatar-wrap">
+            <div class="team-avatar">
+              <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/29.png" alt="Eryn Hopkins">
+            </div>
+          </div>
+          <div class="team-name">Eryn Hopkins</div>
+          <div class="team-title">Educational Consultant</div>
+          <a class="team-btn eryn"
+             href="https://activeparenting.my.canva.site/meet-our-team"
+             target="_blank" rel="noopener noreferrer">
+            Book a meeting
+          </a>
+          <div class="team-contact">
+            800-825-0060 ext. 105<br>
+            cell: 770-370-5877<br>
+            <a href="mailto:Eryn@ActiveParenting.com">Eryn@ActiveParenting.com</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: QUICK LINKS -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">Quick links</div>
+        <h2 class="section-title">Explore more Active Parenting resources</h2>
+      </div>
+
+      <div class="quick-links-grid">
+        <div class="quick-link-card ql-red">
+          <!-- TODO: update href for newsletter if you have a specific link -->
+          <a href="#" target="_blank" rel="noopener noreferrer">Join Our eNewsletter</a>
+        </div>
+        <div class="quick-link-card ql-blue">
+          <!-- TODO: update href for digital preview -->
+          <a href="#" target="_blank" rel="noopener noreferrer">Free Digital Preview</a>
+        </div>
+        <div class="quick-link-card ql-orange">
+          <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/leader-training/"
+             target="_blank" rel="noopener noreferrer">
+            Training
+          </a>
+        </div>
+        <div class="quick-link-card ql-gold">
+          <!-- TODO: update href for catalog if desired -->
+          <a href="#" target="_blank" rel="noopener noreferrer">Download Our Catalog</a>
+        </div>
+        <div class="quick-link-card ql-teal">
+          <a href="https://activeparenting.com/for-leaders/promoting-your-classes/"
+             target="_blank" rel="noopener noreferrer">
+            Parenting Resources
+          </a>
+        </div>
+        <div class="quick-link-card ql-purple">
+          <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/"
+             target="_blank" rel="noopener noreferrer">
+            Research &amp; Results
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONNECT WITH US ONLINE -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">Connect with us online</div>
+        <h2 class="section-title">Stay in touch after the conference</h2>
+      </div>
+
+      <div class="social-row">
+        <!-- TODO: update YouTube link when confirmed -->
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        </a>
+        <a href="https://www.linkedin.com/company/active-parenting/"
+           target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.facebook.com/ActiveParenting"
+           target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/activeparenting/"
+           target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+      </div>
+    </section>
+
+    <!-- CORPORATE FOOTER / ADDRESS -->
+    <div class="corp-footer">
+      <div class="logo">
+        <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/Active%20Parenting%20Logo%20with%20tag%20noBgrnd.png"
+             alt="Active Parenting Publishers — Every stage. Every step.">
+      </div>
+      <div class="corp-footer-links">
+        <a href="https://activeparenting.com" target="_blank" rel="noopener noreferrer">Visit ActiveParenting.com</a> |
+        <a href="https://activeparenting.com/for-leaders/" target="_blank" rel="noopener noreferrer">Learn More</a> |
+        <a href="https://activeparenting.com/contact-us/" target="_blank" rel="noopener noreferrer">Contact Us</a> |
+        <a href="https://activeparenting.com/view-all-programs/" target="_blank" rel="noopener noreferrer">View All Programs</a>
+      </div>
+      <small>
+        &copy; 2025 Active Parenting Publishers. All rights reserved.<br>
+        1290 Kennestone Circle, Suite D-101, Marietta, GA 30066
+      </small>
+    </div>
+
+    <!-- LEGAL FOOTER -->
+    <footer>
+      <p>
+        Active Parenting programs are independent educational resources designed to support Head Start and Early Head
+        Start grantees in meeting family engagement goals. Head Start&reg; and Early Head Start&reg; are registered trademarks
+        of the U.S. Department of Health and Human Services (HHS).
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
+
