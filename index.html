@@ -69,8 +69,34 @@
     }
 
     .hero-main {
-      flex: 1 1 280px;
+      flex: 1 1 320px;
       min-width: 0;
+    }
+
+    .hero-media {
+      flex: 0 0 260px;
+      max-width: 280px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hero-photo {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-photo-secondary {
+      margin-left: 24px;
+      opacity: 0.95;
     }
 
     .hero-logo {
@@ -171,29 +197,36 @@
       text-decoration: none;
     }
 
+    /* BIGGER, CENTERED DISCOUNT PILL */
     .discount-pill {
-      display: inline-flex;
+      margin-top: 18px;
+      display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 6px 12px;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 18px;
       border-radius: 999px;
-      background: rgba(15, 117, 188, 0.14);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      font-size: 13px;
-      font-weight: 600;
-      margin-top: 4px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      max-width: 520px;
     }
 
     .discount-pill-code {
-      padding: 3px 8px;
+      padding: 6px 14px;
       border-radius: 999px;
       background: #ffffff;
       color: var(--purple);
-      font-weight: 700;
-      font-size: 12px;
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.08em;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-transform: uppercase;
     }
 
-    /* --------- PILL NAV (Programs / Training / Research / Blog) --------- */
+    /* --------- PILL NAV --------- */
     .pill-nav-wrap {
       display: flex;
       justify-content: center;
@@ -389,7 +422,7 @@
       margin-top: 18px;
     }
 
-    /* TEAM CARDS */
+    /* TEAM CARDS – BIGGER PHOTOS */
     .team-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -426,8 +459,8 @@
     }
 
     .team-avatar {
-      width:90px;
-      height:90px;
+      width:120px;
+      height:120px;
       border-radius:999px;
       padding:4px;
       background:conic-gradient(from 160deg,#f9b233,#f36f21,#0f75bc,#f9b233);
@@ -646,6 +679,16 @@
       .feature-layout {
         grid-template-columns:minmax(0,1fr);
       }
+
+      .hero-media {
+        flex-basis: 100%;
+        max-width: 100%;
+        flex-direction: row;
+      }
+
+      .hero-photo-secondary {
+        margin-left: 10px;
+      }
     }
 
     @media (max-width: 720px) {
@@ -668,6 +711,10 @@
       .hero {
         border-radius: 18px;
       }
+
+      .discount-pill {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -687,8 +734,8 @@
         </div>
         <h1>Supporting Head Start families with Active Parenting: First Five Years</h1>
         <p class="hero-subtitle">
-          This page is just for Head Start and Early Head Start professionals who connected with us at the conference.
-          Explore how First Five Years aligns with your PFCE goals and access follow-up resources.
+          Explore how First Five Years aligns with your PFCE goals and access follow-up resources for Head Start and
+          Early Head Start families.
         </p>
         <div class="hero-note">
           Focused exclusively on <strong>Head Start &amp; Early Head Start</strong> implementation.
@@ -703,12 +750,26 @@
         </div>
 
         <div class="discount-pill">
-          Conference thank-you: <span class="discount-pill-code">Code: 26C01</span> 20% off your first order
+          Conference thank-you:
+          <span class="discount-pill-code">Code: 26C01</span>
+          20% off your first order
+        </div>
+      </div>
+
+      <!-- HERO IMAGES: parents with young children -->
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-photo hero-photo-main">
+          <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/First%20Five%20Years%20-%20Father%20with%20Kids%20and%20Hearts.jpeg"
+               alt="">
+        </div>
+        <div class="hero-photo hero-photo-secondary">
+          <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/AdobeStock_389656960.jpeg"
+               alt="">
         </div>
       </div>
     </header>
 
-    <!-- PILL NAV (Programs / Training / Research / Blog) -->
+    <!-- PILL NAV -->
     <div class="pill-nav-wrap">
       <nav class="pill-nav" aria-label="Active Parenting primary links">
         <a href="https://activeparenting.com/product/first-five-years-of-parenting/" target="_blank" rel="noopener noreferrer">
@@ -726,7 +787,7 @@
       </nav>
     </div>
 
-    <!-- SECTION: HOW WE FIT THE PFCE FRAMEWORK -->
+    <!-- SECTION: PFCE -->
     <section class="section" id="pfce">
       <div class="section-header">
         <div class="section-kicker">Head Start alignment</div>
@@ -768,7 +829,7 @@
       </div>
     </section>
 
-    <!-- SECTION: FEATURED PROGRAM FOR HEAD START -->
+    <!-- SECTION: FEATURED PROGRAM -->
     <section class="section" id="featured-program">
       <div class="section-header">
         <div class="section-kicker">Featured Head Start program</div>
@@ -804,24 +865,7 @@
       </div>
     </section>
 
-    <!-- SECTION: STAY CONNECTED (TEXT ONLY) -->
-    <section class="section" id="stay-connected">
-      <div class="section-header">
-        <div class="section-kicker">Stay connected</div>
-        <h2 class="section-title">Get samples, pricing, and implementation support</h2>
-        <p class="section-intro">
-          Share your information below to receive digital samples, ideas for aligning Active Parenting with your program
-          goals, and an optional follow-up conversation after the conference.
-        </p>
-        <p class="section-intro" style="margin-top:6px;">
-          Since you have already shared your information by joining at our booth, our team will follow up with you
-          using the details you provided. If you would like to add colleagues to the list, simply share this page and
-          have them contact us directly.
-        </p>
-      </div>
-    </section>
-
-    <!-- SECTION: ABOUT ACTIVE PARENTING (from Canva style) -->
+    <!-- SECTION: ABOUT ACTIVE PARENTING -->
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">About Active Parenting</div>
@@ -906,7 +950,7 @@
       </div>
     </section>
 
-    <!-- SECTION: CONNECT WITH OUR TEAM -->
+    <!-- SECTION: CONNECT WITH OUR TEAM (now includes Stay Connected text) -->
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">Your Head Start support team</div>
@@ -914,6 +958,16 @@
         <p class="section-intro">
           Whether you are new to Active Parenting or expanding an existing initiative, our team can help you select
           materials, schedule training, and align with your Head Start performance standards.
+        </p>
+        <p class="section-intro" style="margin-top:6px;">
+          <strong>Stay connected.</strong> Get samples, pricing, and implementation support. Share your information
+          below to receive digital samples, ideas for aligning Active Parenting with your program goals, and an optional
+          follow-up conversation after the conference.
+        </p>
+        <p class="section-intro" style="margin-top:6px;">
+          Since you have already shared your information by joining at our booth, our team will follow up with you using
+          the details you provided. If you would like to add colleagues to the list, simply share this page and have
+          them contact us directly.
         </p>
       </div>
 
@@ -1085,3 +1139,4 @@
   </div>
 </body>
 </html>
+
