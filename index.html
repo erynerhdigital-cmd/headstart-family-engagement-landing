@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Head Start Parent & Family Engagement Conference | Active Parenting</title>
+  <title>Head Start Family Engagement Landing | Active Parenting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Active Parenting resources for Head Start programs attending the NHSA Parent and Family Engagement Conference. See how our evidence-based parenting curricula support the PFCE Framework."
+    content="Active Parenting: First Five Years resources for Head Start and Early Head Start programs, including PFCE alignment and a conference discount code for new orders."
   />
 
   <style>
@@ -57,7 +57,7 @@
     .hero {
       background: linear-gradient(135deg, var(--gold) 0%, var(--orange) 40%, var(--blue) 100%);
       border-radius: 24px;
-      padding: 32px 24px;
+      padding: 24px 24px 28px;
       color: #ffffff;
       box-shadow: var(--shadow-soft);
       margin: 16px 0 16px;
@@ -69,8 +69,18 @@
     }
 
     .hero-main {
-      flex: 1 1 260px;
+      flex: 1 1 280px;
       min-width: 0;
+    }
+
+    .hero-logo {
+      margin-bottom: 10px;
+    }
+
+    .hero-logo img {
+      max-width: 220px;
+      height: auto;
+      display: block;
     }
 
     .badge {
@@ -104,18 +114,13 @@
     .hero-subtitle {
       font-size: 15px;
       max-width: 520px;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
-    .hero-meta {
+    .hero-note {
       font-size: 13px;
       opacity: 0.94;
       margin-bottom: 16px;
-    }
-
-    .hero-meta span {
-      display: inline-block;
-      margin-right: 16px;
     }
 
     .hero-actions {
@@ -166,40 +171,29 @@
       text-decoration: none;
     }
 
-    .hero-side {
-      flex: 0 0 260px;
-      max-width: 320px;
-      width: 100%;
-    }
-
-    .hero-panel {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 16px 14px 14px;
-      font-size: 13px;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-    }
-
-    .hero-panel-title {
+    .discount-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(15, 117, 188, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       font-size: 13px;
       font-weight: 600;
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      opacity: 0.9;
-    }
-
-    .hero-panel ul {
-      list-style: disc;
-      padding-left: 18px;
-      margin: 8px 0 0;
-    }
-
-    .hero-panel li + li {
       margin-top: 4px;
     }
 
-    /* --------- PILL NAV (from email style) --------- */
+    .discount-pill-code {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--purple);
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    /* --------- PILL NAV (Programs / Training / Research / Blog) --------- */
     .pill-nav-wrap {
       display: flex;
       justify-content: center;
@@ -328,79 +322,6 @@
       margin-top: 4px;
     }
 
-    /* FORM SECTION */
-    .form-section {
-      margin-top: 8px;
-    }
-
-    .form-layout {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-      gap: 20px;
-      align-items: flex-start;
-      margin-top: 16px;
-      flex-wrap: wrap;
-    }
-
-    .form-card {
-      background: var(--card-bg);
-      border-radius: 20px;
-      padding: 18px 18px 16px;
-      border: 1px solid var(--border-soft);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .form-card h2 {
-      font-size: 18px;
-      margin-bottom: 4px;
-    }
-
-    .form-card p {
-      font-size: 13px;
-      color: #4f5a6b;
-      margin-bottom: 10px;
-    }
-
-    .form-note {
-      font-size: 11px;
-      color: #7b8394;
-      margin-top: 6px;
-    }
-
-    .placeholder-box {
-      border-radius: 14px;
-      border: 1px dashed #c5cee0;
-      padding: 14px;
-      background: #f7f9ff;
-      font-size: 13px;
-      color: #4f5a6b;
-    }
-
-    .placeholder-box code {
-      font-size: 12px;
-      background: #e7eefc;
-      padding: 2px 5px;
-      border-radius: 4px;
-    }
-
-    .aside-note {
-      font-size: 12px;
-      color: #4f5a6b;
-    }
-
-    .aside-note strong {
-      font-weight: 600;
-    }
-
-    .aside-note ul {
-      margin-top: 6px;
-      padding-left: 18px;
-    }
-
-    .aside-note li + li {
-      margin-top: 4px;
-    }
-
     /* FEATURED PROGRAM SECTION */
     .feature-layout {
       display: grid;
@@ -415,7 +336,7 @@
       border-radius: 18px;
       border: 1px solid var(--border-soft);
       padding: 10px;
-      box-shadow: 0 10px 30px rgba(16,24,40,0.06);
+      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
     }
 
     .feature-image-wrap img {
@@ -672,14 +593,54 @@
       color:var(--blue);
     }
 
+    /* HIGHLIGHT OFFER SECTION */
+    .offer-card {
+      background:#fff3e0;
+      border-radius:20px;
+      border:1px solid #fbd1a3;
+      padding:18px 18px 16px;
+      box-shadow:0 10px 30px rgba(16,24,40,0.05);
+      max-width:720px;
+    }
+
+    .offer-card h2 {
+      font-size:18px;
+      margin-bottom:6px;
+      color:#c85000;
+    }
+
+    .offer-card p {
+      font-size:14px;
+      color:#4f5a6b;
+    }
+
+    .offer-code-pill {
+      display:inline-flex;
+      align-items:center;
+      padding:6px 11px;
+      border-radius:999px;
+      background:#ffffff;
+      border:1px dashed #f7941d;
+      margin-top:8px;
+      font-size:13px;
+      font-weight:600;
+      color:#c85000;
+    }
+
+    .offer-code-pill span {
+      background:#f7941d;
+      color:#ffffff;
+      border-radius:999px;
+      padding:2px 8px;
+      margin-left:8px;
+      font-family:monospace;
+      letter-spacing:0.08em;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .hero {
-        padding: 24px 18px;
-      }
-
-      .form-layout {
-        grid-template-columns: minmax(0, 1fr);
+        padding: 22px 18px;
       }
 
       .feature-layout {
@@ -716,37 +677,33 @@
     <!-- HERO -->
     <header class="hero">
       <div class="hero-main">
+        <div class="hero-logo">
+          <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/Active%20Parenting%20Logo%20with%20tag%20noBgrnd.png"
+               alt="Active Parenting Publishers logo">
+        </div>
         <div class="badge">
           <span class="badge-dot"></span>
-          Head Start Parent &amp; Family Engagement Conference
+          Thank you for stopping by our booth!
         </div>
-        <h1>Bring Active Parenting Home from the Conference</h1>
+        <h1>Supporting Head Start families with Active Parenting: First Five Years</h1>
         <p class="hero-subtitle">
-          Stop by our booth and use this page to access sample lessons, implementation guides, and follow-up support
-          tailored for Head Start and Early Head Start programs.
+          This page is just for Head Start and Early Head Start professionals who connected with us at the conference.
+          Explore how First Five Years aligns with your PFCE goals and access follow-up resources.
         </p>
-        <div class="hero-meta">
-          <span><strong>Hosted by:</strong> NHSA</span>
-          <span><strong>Focus:</strong> Parent &amp; Family Engagement</span>
+        <div class="hero-note">
+          Focused exclusively on <strong>Head Start &amp; Early Head Start</strong> implementation.
         </div>
         <div class="hero-actions">
           <a href="#featured-program" class="btn-primary">
-            See our Head Start program <span>↓</span>
+            Learn about First Five Years <span>↓</span>
           </a>
-          <a href="#form" class="btn-ghost">
-            Share your info for follow-up
+          <a href="#conference-offer" class="btn-ghost">
+            View your 20% off conference offer
           </a>
         </div>
-      </div>
 
-      <div class="hero-side">
-        <div class="hero-panel">
-          <div class="hero-panel-title">When you scan at the booth</div>
-          <ul>
-            <li>Quick access to digital samples</li>
-            <li>Implementation ideas linked to the PFCE Framework</li>
-            <li>Optional follow-up consult for your program</li>
-          </ul>
+        <div class="discount-pill">
+          Conference thank-you: <span class="discount-pill-code">Code: 26C01</span> 20% off your first order
         </div>
       </div>
     </header>
@@ -754,11 +711,11 @@
     <!-- PILL NAV (Programs / Training / Research / Blog) -->
     <div class="pill-nav-wrap">
       <nav class="pill-nav" aria-label="Active Parenting primary links">
-        <a href="https://activeparenting.com/product-category/for-leaders/parenting-curriculums-for-leaders/products-at-a-glance-leaders/" target="_blank" rel="noopener noreferrer">
-          Programs
+        <a href="https://activeparenting.com/product/first-five-years-of-parenting/" target="_blank" rel="noopener noreferrer">
+          First Five Years Program
         </a>
         <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/leader-training/" target="_blank" rel="noopener noreferrer">
-          Training
+          Leader Training
         </a>
         <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/" target="_blank" rel="noopener noreferrer">
           Research
@@ -776,8 +733,8 @@
         <h2 class="section-title">How Active Parenting supports the PFCE Framework</h2>
         <p class="section-intro">
           The Head Start Parent, Family, and Community Engagement (PFCE) Framework is a road map for building strong,
-          goal-oriented relationships with families. Active Parenting curricula are designed to help programs strengthen
-          key family outcomes like well-being, positive parent-child relationships, and families as lifelong educators.
+          goal-oriented relationships with families. Active Parenting: First Five Years was designed to support key
+          family outcomes like well-being, positive parent-child relationships, and families as lifelong educators.
         </p>
       </div>
 
@@ -832,10 +789,11 @@
         <div>
           <h3 style="font-size:16px;font-weight:600;margin-bottom:6px;">Why First Five Years works for Head Start</h3>
           <ul class="list-compact">
-            <li>Age-appropriate video vignettes that reflect real-life parenting situations.</li>
-            <li>Flexible formats for home visits, small groups, or family nights.</li>
-            <li>Parent’s Guides with simple activities that connect home routines to school readiness.</li>
-            <li>Leader’s materials that make it easy to train new facilitators and keep quality consistent.</li>
+            <li>Age-appropriate video vignettes that reflect real-life parenting situations families recognize.</li>
+            <li>Flexible formats for home visits, small parent groups, or family engagement events.</li>
+            <li>Parent’s Guides with simple activities that connect home routines to school readiness goals.</li>
+            <li>Leader’s materials that make it easy to orient new staff and keep facilitation quality consistent.</li>
+            <li>Content that aligns with PFCE outcomes around well-being, relationships, and learning.</li>
           </ul>
           <a class="btn-outline"
              href="https://activeparenting.com/product/first-five-years-of-parenting/"
@@ -846,37 +804,20 @@
       </div>
     </section>
 
-    <!-- SECTION: PROGRAMS HIGHLIGHT -->
-    <section class="section" id="resources">
+    <!-- SECTION: STAY CONNECTED (TEXT ONLY) -->
+    <section class="section" id="stay-connected">
       <div class="section-header">
-        <div class="section-kicker">For Head Start &amp; Early Head Start</div>
-        <h2 class="section-title">Curricula that work in real-world Head Start settings</h2>
+        <div class="section-kicker">Stay connected</div>
+        <h2 class="section-title">Get samples, pricing, and implementation support</h2>
         <p class="section-intro">
-          From home-based services to center-based parent workshops, Active Parenting programs can support your
-          Parent, Family, and Community Engagement goals across age levels and formats.
+          Share your information below to receive digital samples, ideas for aligning Active Parenting with your program
+          goals, and an optional follow-up conversation after the conference.
         </p>
-      </div>
-
-      <div class="grid-2">
-        <article class="card">
-          <h3>Core Active Parenting programs</h3>
-          <ul class="list-compact">
-            <li><strong>Active Parenting: First Five Years</strong> for parents of children birth–5</li>
-            <li><strong>Active Parenting 4th Edition</strong> for parents of children ages 5–12</li>
-            <li><strong>Active Parenting of Teens</strong> for parents and caregivers of adolescents</li>
-            <li><strong>Special-focus programs</strong> that address topics such as divorce, school success, and more</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Flexible implementation options</h3>
-          <ul class="list-compact">
-            <li>In-person or virtual groups</li>
-            <li>Home-based visits with video and discussion</li>
-            <li>Short family nights or ongoing series</li>
-            <li>English and Spanish materials available for many programs</li>
-          </ul>
-        </article>
+        <p class="section-intro" style="margin-top:6px;">
+          Since you have already shared your information by joining at our booth, our team will follow up with you
+          using the details you provided. If you would like to add colleagues to the list, simply share this page and
+          have them contact us directly.
+        </p>
       </div>
     </section>
 
@@ -938,65 +879,41 @@
       </div>
     </section>
 
-    <!-- SECTION: FORM -->
-    <section class="section form-section" id="form">
+    <!-- SECTION: CONFERENCE OFFER -->
+    <section class="section" id="conference-offer">
       <div class="section-header">
-        <div class="section-kicker">Stay connected</div>
-        <h2 class="section-title">Get samples, pricing, and implementation support</h2>
+        <div class="section-kicker">Conference thank-you</div>
+        <h2 class="section-title">Your exclusive Head Start offer</h2>
         <p class="section-intro">
-          Share your information below to receive digital samples, ideas for aligning Active Parenting with your program
-          goals, and an optional follow-up conversation after the conference.
+          As a thank-you for connecting with us at the conference, we are extending a special discount on your first
+          Active Parenting order.
         </p>
       </div>
 
-      <div class="form-layout">
-        <div class="form-card">
-          <h2>Conference follow-up form</h2>
-          <p>
-            Use this form if you scanned our code at the booth or are viewing this page with your team. You can request
-            sample access, quotes, and support tailored to your site’s needs.
-          </p>
-
-          <!-- ========= PASTE YOUR FORM EMBED BELOW ========= -->
-          <div class="placeholder-box">
-            <strong>Form embed goes here.</strong><br /><br />
-            Replace this box with your Constant Contact, HubSpot, or other form embed code.<br /><br />
-            For example:<br />
-            <code>&lt;!-- Constant Contact or HubSpot form embed --&gt;</code>
-          </div>
-          <!-- ========= END FORM EMBED PLACEHOLDER ========= -->
-
-          <p class="form-note">
-            Your information will be used to follow up with you about Active Parenting programs and Head Start-focused
-            implementation ideas. You can update your preferences at any time.
-          </p>
+      <div class="offer-card">
+        <h2>20% off your first order</h2>
+        <p>
+          Use this code when you place your first order for Active Parenting materials, including First Five Years, and
+          share it with your purchasing team so they know it is tied to the conference.
+        </p>
+        <div class="offer-code-pill">
+          Conference code: <span>26C01</span>
         </div>
-
-        <aside class="aside-note">
-          <strong>Suggested form fields:</strong>
-          <ul>
-            <li>Name and role (e.g., Family Services, Education, Home-based)</li>
-            <li>Program name and location</li>
-            <li>Which ages you serve (Prenatal–3, 3–5, K–5, teens)</li>
-            <li>Interest area (samples, pricing, training, implementation planning)</li>
-            <li>Preferred follow-up method (email, phone, virtual meeting)</li>
-          </ul>
-          <p style="margin-top:8px;">
-            Tip: If you’re using HubSpot or Constant Contact, paste their embed script into the box on the left so new
-            contacts flow straight into your system.
-          </p>
-        </aside>
+        <p style="margin-top:10px;font-size:12px;color:#7b8394;">
+          Valid for new orders from Head Start and Early Head Start programs. Please include code 26C01 when ordering
+          online or by phone to receive your 20% discount.
+        </p>
       </div>
     </section>
 
     <!-- SECTION: CONNECT WITH OUR TEAM -->
     <section class="section">
       <div class="section-header">
-        <div class="section-kicker">Connect with our team</div>
+        <div class="section-kicker">Your Head Start support team</div>
         <h2 class="section-title">We’re here to help you plan</h2>
         <p class="section-intro">
           Whether you are new to Active Parenting or expanding an existing initiative, our team can help you select
-          programs, schedule training, and align with your Head Start performance standards.
+          materials, schedule training, and align with your Head Start performance standards.
         </p>
       </div>
 
@@ -1074,34 +991,40 @@
       </div>
 
       <div class="quick-links-grid">
-        <div class="quick-link-card ql-red">
-          <!-- TODO: update href for newsletter if you have a specific link -->
-          <a href="#" target="_blank" rel="noopener noreferrer">Join Our eNewsletter</a>
-        </div>
         <div class="quick-link-card ql-blue">
-          <!-- TODO: update href for digital preview -->
-          <a href="#" target="_blank" rel="noopener noreferrer">Free Digital Preview</a>
+          <a href="https://activeparenting.com/product/first-five-years-of-parenting/"
+             target="_blank" rel="noopener noreferrer">
+            First Five Years details
+          </a>
         </div>
         <div class="quick-link-card ql-orange">
           <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/leader-training/"
              target="_blank" rel="noopener noreferrer">
-            Training
+            Leader Training
           </a>
         </div>
         <div class="quick-link-card ql-gold">
-          <!-- TODO: update href for catalog if desired -->
-          <a href="#" target="_blank" rel="noopener noreferrer">Download Our Catalog</a>
+          <a href="https://activeparenting.com/view-all-programs/"
+             target="_blank" rel="noopener noreferrer">
+            View All Programs
+          </a>
         </div>
         <div class="quick-link-card ql-teal">
           <a href="https://activeparenting.com/for-leaders/promoting-your-classes/"
              target="_blank" rel="noopener noreferrer">
-            Parenting Resources
+            Promotion &amp; outreach tools
           </a>
         </div>
         <div class="quick-link-card ql-purple">
           <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/"
              target="_blank" rel="noopener noreferrer">
-            Research &amp; Results
+            Research &amp; results
+          </a>
+        </div>
+        <div class="quick-link-card ql-red">
+          <a href="https://activeparenting.com/contact-us/"
+             target="_blank" rel="noopener noreferrer">
+            Contact our team
           </a>
         </div>
       </div>
@@ -1115,7 +1038,6 @@
       </div>
 
       <div class="social-row">
-        <!-- TODO: update YouTube link when confirmed -->
         <a href="#" target="_blank" rel="noopener noreferrer">
           <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
         </a>
@@ -1163,4 +1085,3 @@
   </div>
 </body>
 </html>
-
