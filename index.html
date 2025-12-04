@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Active Parenting: First Five Years resources for Head Start and Early Head Start programs, including PFCE alignment and a conference giveaway with a 20% discount for new program kit orders."
+    content="Active Parenting: First Five Years resources for Head Start and Early Head Start programs, including PFCE alignment and a special conference giveaway & discount opportunity."
   />
 
   <style>
@@ -115,14 +115,13 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 6px 14px;
+      padding: 4px 12px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.16);
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      margin-bottom: 14px;
-      font-weight: 600;
+      margin-bottom: 10px;
     }
 
     .badge-dot {
@@ -133,9 +132,15 @@
       opacity: 0.9;
     }
 
+    .badge strong {
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 13px;
+    }
+
     .hero h1 {
-      font-size: clamp(24px, 3.8vw, 30px);
-      line-height: 1.25;
+      font-size: clamp(24px, 3.6vw, 30px);
+      line-height: 1.2;
       margin-bottom: 10px;
       font-weight: 700;
       font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -143,14 +148,15 @@
 
     .hero-subtitle {
       font-size: 16px;
-      max-width: 540px;
-      margin-bottom: 14px;
+      max-width: 520px;
+      margin-bottom: 10px;
     }
 
     .hero-note {
-      font-size: 14px;
-      opacity: 0.94;
+      font-size: 15px;
+      max-width: 560px;
       margin-bottom: 16px;
+      opacity: 0.96;
     }
 
     .hero-actions {
@@ -158,6 +164,7 @@
       flex-wrap: wrap;
       gap: 10px;
       align-items: center;
+      margin-top: 4px;
     }
 
     .btn-primary {
@@ -204,55 +211,16 @@
       font-family: inherit;
     }
 
-    /* --------- SIGNUP CARD (FORM) --------- */
-    .signup-section {
-      margin: 20px 0 28px;
-    }
-
-    .signup-card {
-      background: #ffffff;
-      border-radius: 22px;
-      padding: 20px 20px 24px;
-      box-shadow: var(--shadow-soft);
-      max-width: 960px;
-      margin: 0 auto;
-      border: 1px solid var(--border-soft);
-    }
-
-    .signup-copy h2 {
-      font-size: 20px;
-      margin-bottom: 8px;
-      font-weight: 700;
-      color: var(--dark);
-    }
-
-    .signup-copy p {
-      font-size: 16px;
-      color: #4f5a6b;
-    }
-
-    .signup-copy p + p {
-      margin-top: 6px;
-    }
-
-    .signup-form-shell {
-      margin-top: 18px;
-      background: #e6f2ff;
-      border-radius: 18px;
-      padding: 18px 16px;
-      box-shadow: 0 8px 20px rgba(15, 27, 51, 0.08);
-    }
-
-    .hs-form-frame {
-      border-radius: 14px;
-      overflow: hidden;
+    .btn-ghost:hover {
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.06);
     }
 
     /* --------- PILL NAV --------- */
     .pill-nav-wrap {
       display: flex;
       justify-content: center;
-      margin: 10px 0 26px;
+      margin: 10px 0 20px;
     }
 
     .pill-nav {
@@ -324,13 +292,6 @@
       margin-top: 16px;
     }
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 16px;
-    }
-
     .card {
       background: var(--card-bg);
       border-radius: var(--radius-lg);
@@ -367,18 +328,18 @@
     }
 
     .list-compact {
-      font-size: 16px;
+      font-size: 15px;
       color: #4f5a6b;
-      padding-left: 22px;
+      padding-left: 20px;
       margin-top: 8px;
     }
 
     .list-compact li + li {
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
-    /* FEATURED PROGRAM SECTION */
-    .feature-layout {
+    /* FEATURE LAYOUT INSIDE PFCE */
+    .pfce-feature-layout {
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
       gap: 20px;
@@ -386,7 +347,7 @@
       align-items: center;
     }
 
-    .feature-image-wrap {
+    .pfce-feature-image-wrap {
       background: #ffffff;
       border-radius: 18px;
       border: 1px solid var(--border-soft);
@@ -394,7 +355,7 @@
       box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
     }
 
-    .feature-image-wrap img {
+    .pfce-feature-image-wrap img {
       display: block;
       width: 100%;
       height: auto;
@@ -410,7 +371,7 @@
       font-size: 15px;
       font-weight: 700;
       text-decoration: none;
-      margin-top: 12px;
+      margin-top: 10px;
       font-family: inherit;
     }
 
@@ -420,7 +381,24 @@
       text-decoration: none;
     }
 
-    /* ABOUT ACTIVE PARENTING SECTION */
+    /* SIGNUP / FORM SECTION – FULL-WIDTH WHITE ROUNDED */
+    .signup-section {
+      margin: 20px 0 30px;
+    }
+
+    .signup-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 24px 18px 26px;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 10px 30px rgba(16, 24, 40, 0.05);
+    }
+
+    .hs-form-frame {
+      width: 100%;
+    }
+
+    /* ABOUT ACTIVE PARENTING SECTION – TOP CARDS ONLY */
     .about-grid-top {
       margin-top: 18px;
     }
@@ -440,10 +418,6 @@
     .about-icon.eb { background:#5c2d91; }
     .about-icon.vb { background:#f9b233; }
     .about-icon.int { background:#d81b60; }
-
-    .about-approach {
-      margin-top: 18px;
-    }
 
     /* TEAM CARDS – BIGGER PHOTOS */
     .team-grid {
@@ -519,8 +493,6 @@
       text-align:center;
       padding:9px 10px;
       border-radius:999px;
-      background:#0f75bc;
-      color:#ffffff;
       font-size:13px;
       font-weight:700;
       text-decoration:none;
@@ -528,9 +500,9 @@
       font-family: inherit;
     }
 
-    .team-btn.micole { background:#d7263d; }
+    .team-btn.micole { background:#d7263d; color:#ffffff; }
     .team-btn.bradley { background:#f9b233; color:#1d2630; }
-    .team-btn.eryn { background:#3db5e6; }
+    .team-btn.eryn { background:#3db5e6; color:#ffffff; }
 
     .team-contact {
       font-size:12px;
@@ -649,58 +621,10 @@
       color:var(--blue);
     }
 
-    /* HIGHLIGHT OFFER SECTION */
-    .offer-card {
-      background:#fff3e0;
-      border-radius:20px;
-      border:1px solid #fbd1a3;
-      padding:18px 18px 16px;
-      box-shadow:0 10px 30px rgba(16,24,40,0.05);
-      max-width:720px;
-    }
-
-    .offer-card h2 {
-      font-size:20px;
-      margin-bottom:6px;
-      color:#c85000;
-    }
-
-    .offer-card p {
-      font-size:15px;
-      color:#4f5a6b;
-    }
-
-    .offer-code-pill {
-      display:inline-flex;
-      align-items:center;
-      padding:6px 11px;
-      border-radius:999px;
-      background:#ffffff;
-      border:1px dashed #f7941d;
-      margin-top:8px;
-      font-size:14px;
-      font-weight:600;
-      color:#c85000;
-    }
-
-    .offer-code-pill span {
-      background:#f7941d;
-      color:#ffffff;
-      border-radius:999px;
-      padding:2px 8px;
-      margin-left:8px;
-      font-family:monospace;
-      letter-spacing:0.08em;
-    }
-
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .hero {
         padding: 22px 18px;
-      }
-
-      .feature-layout {
-        grid-template-columns:minmax(0,1fr);
       }
 
       .hero-media {
@@ -712,14 +636,14 @@
       .hero-photo-secondary {
         margin-left: 10px;
       }
+
+      .pfce-feature-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
     }
 
     @media (max-width: 720px) {
       .grid-3 {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .grid-2 {
         grid-template-columns: minmax(0, 1fr);
       }
 
@@ -734,16 +658,12 @@
       .hero {
         border-radius: 18px;
       }
-
-      .discount-pill {
-        max-width: 100%;
-      }
-
-      .signup-card {
-        padding: 18px 14px 20px;
-      }
     }
   </style>
+
+  <!-- Start of HubSpot Embed Code (global) -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47817909.js"></script>
+  <!-- End of HubSpot Embed Code -->
 </head>
 
 <body>
@@ -755,27 +675,26 @@
           <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/app-logo-white.png"
                alt="Active Parenting Publishers logo">
         </div>
-
         <div class="badge">
           <span class="badge-dot"></span>
-          Supporting Head Start families with Active Parenting: First Five Years
+          <span>Supporting Head Start families with <strong>Active Parenting: First Five Years</strong></span>
         </div>
-
         <h1>
-          Thanks for visiting our booth—it was great to connect with you! Enter to Win a FREE Active Parenting:
-          First Five Years Standard Program Kit &amp; Get Your Exclusive 20% Discount!
+          Thanks for visiting our booth—it was great to connect with you! Enter to Win a FREE Active Parenting: First Five Years Standard Program Kit &amp; Get Your Exclusive 20% Discount!
         </h1>
-
         <p class="hero-subtitle">
-          Achieve Your Head Start PFCE Goals with Active Parenting: First Five Years,
-          an evidence-based curriculum designed exclusively for Head Start & Early Head Start implementation.
-
+          Explore how First Five Years aligns with your PFCE goals and access follow-up resources for Head Start and Early Head Start families.
+        </p>
+        <div class="hero-note">
+          <strong>Achieve Your Head Start PFCE Goals with Active Parenting: First Five Years.</strong><br>
+          The evidence-based curriculum designed exclusively for Head Start &amp; Early Head Start implementation.
+        </div>
         <div class="hero-actions">
-          <a href="#featured-program" class="btn-primary">
+          <a href="#pfce" class="btn-primary">
             Learn about First Five Years <span>↓</span>
           </a>
-          <a href="#signup-card" class="btn-ghost">
-            Sign up for the giveaway &amp; 20% discount
+          <a href="#signup" class="btn-ghost">
+            Sign up for giveaway &amp; discount
           </a>
         </div>
       </div>
@@ -793,29 +712,15 @@
       </div>
     </header>
 
-    <!-- SIGNUP / GIVEAWAY CARD -->
-    <section class="signup-section" id="signup-card">
+    <!-- SIGNUP / FORM – FULL-WIDTH WHITE ROUNDED SECTION -->
+    <section class="signup-section" id="signup">
       <div class="signup-card">
-        <div class="signup-copy">
-          <h2>Sign up for the giveaway &amp; 20% discount</h2>
-          <p>
-            Sign up for our free eNews below to automatically be entered into our giveaway—plus, everyone who signs
-            up receives <strong>20% off any program kit.</strong>
-          </p>
-          <p>
-            By signing up, you are automatically entered to win a <strong>FREE Active Parenting: First Five Years
-            Program Kit ($499 value)</strong> and will receive your guaranteed 20% off code via email. Explore how
-            <em>First Five Years</em> aligns with your PFCE goals for Head Start and Early Head Start families.
-          </p>
-        </div>
-
-        <div class="signup-form-shell">
-          <!-- HubSpot Form Embed -->
-          <script src="https://js.hsforms.net/forms/embed/47817909.js" defer></script>
-          <div class="hs-form-frame"
-               data-region="na1"
-               data-form-id="715af43c-9945-4dbe-998a-e5668b5ee35d"
-               data-portal-id="47817909"></div>
+        <!-- HubSpot Form -->
+        <script src="https://js.hsforms.net/forms/embed/47817909.js" defer></script>
+        <div class="hs-form-frame"
+             data-region="na1"
+             data-form-id="715af43c-9945-4dbe-998a-e5668b5ee35d"
+             data-portal-id="47817909">
         </div>
       </div>
     </section>
@@ -838,15 +743,17 @@
       </nav>
     </div>
 
-    <!-- SECTION: PFCE -->
+    <!-- SECTION: PFCE / HEAD START ALIGNMENT -->
     <section class="section" id="pfce">
       <div class="section-header">
-        <div class="section-kicker">Head Start Alignment</div>
-        <h2 class="section-title">
-          Achieve Your Head Start PFCE Goals with Active Parenting: First Five Years
-        </h2>
+        <div class="section-kicker">Head Start alignment</div>
+        <h2 class="section-title">How Active Parenting supports the PFCE Framework</h2>
         <p class="section-intro">
-          The evidence-based curriculum designed exclusively for Head Start &amp; Early Head Start implementation.
+          The Active Parenting: First Five Years curriculum is designed to help your program build strong,
+          goal-oriented relationships with families and align seamlessly with the Head Start Parent, Family,
+          and Community Engagement (PFCE) Framework. Explore how our evidence-backed, video-based approach
+          supports key family outcomes like well-being, positive parent-child relationships, and families
+          as lifelong educators.
         </p>
       </div>
 
@@ -855,8 +762,8 @@
           <div class="pill">Family well-being</div>
           <h3>Stress, routines, and resilience</h3>
           <p>
-            Lessons help parents build routines, problem-solve family challenges, and practice healthy communication,
-            which supports mental health, daily functioning, and stability at home.
+            Lessons help parents build routines, problem-solve family challenges, and practice healthy
+            communication, which supports mental health, daily functioning, and stability at home.
           </p>
         </article>
 
@@ -864,8 +771,8 @@
           <div class="pill">Parent-child relationships</div>
           <h3>Positive, developmentally appropriate tools</h3>
           <p>
-            Concrete skills like encouragement, logical consequences, and active listening help parents strengthen
-            attachment and reduce power struggles in ways that fit each child’s age and stage.
+            Concrete skills like encouragement, logical consequences, and active listening help parents
+            strengthen attachment and reduce power struggles in ways that fit each child’s age and stage.
           </p>
         </article>
 
@@ -873,58 +780,46 @@
           <div class="pill">Families as educators</div>
           <h3>Parents as children’s first teachers</h3>
           <p>
-            Activities and take-home practice sheets give families simple ways to support learning, social-emotional
-            skills, and school readiness in everyday moments.
+            Activities and take-home practice sheets give families simple ways to support learning,
+            social-emotional skills, and school readiness in everyday moments.
           </p>
         </article>
       </div>
-    </section>
 
-    <!-- SECTION: FEATURED PROGRAM -->
-    <section class="section" id="featured-program">
-      <div class="section-header">
-        <div class="section-kicker">Featured Head Start program</div>
-        <h2 class="section-title">Active Parenting: First Five Years</h2>
-        <p class="section-intro">
-          For many Head Start and Early Head Start grantees, <strong>Active Parenting: First Five Years</strong> is the
-          go-to curriculum for supporting families with children from birth to age five. It blends video, discussion,
-          and take-home activities to help caregivers build nurturing, structured, and developmentally appropriate
-          homes during the earliest years.
-        </p>
-      </div>
-
-      <div class="feature-layout">
-        <div class="feature-image-wrap">
-          <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/Active-Parenting-First-Five-Years-Program-Kit-1680.png"
-               alt="Active Parenting: First Five Years Program Kit">
-        </div>
-        <div>
-          <h3 style="font-size:18px;font-weight:600;margin-bottom:6px;">Why First Five Years works for Head Start</h3>
-          <ul class="list-compact">
-            <li>Age-appropriate video vignettes that reflect real-life parenting situations families recognize.</li>
-            <li>Flexible formats for home visits, small parent groups, or family engagement events.</li>
-            <li>Skill modeling embedded in slide presentations that are easy for leaders to use.</li>
-            <li>Step-by-step Leader’s Guides to support new and experienced facilitators.</li>
-            <li>Parent’s Guides with home activities to reinforce learning between sessions.</li>
-            <li>Content that aligns with PFCE outcomes around well-being, relationships, and learning.</li>
-          </ul>
-          <a class="btn-outline"
-             href="https://activeparenting.com/product/first-five-years-of-parenting/"
-             target="_blank" rel="noopener noreferrer">
-            View First Five Years program details
-          </a>
+      <div style="margin-top:20px;">
+        <h3 style="font-size:18px;font-weight:600;margin-bottom:6px;">Why First Five Years works for Head Start</h3>
+        <div class="pfce-feature-layout">
+          <div>
+            <ul class="list-compact">
+              <li>Flexible formats for home visits, small parent groups, or family engagement events.</li>
+              <li>Age-appropriate video vignettes that reflect real-life parenting situations families recognize.</li>
+              <li>Step-by-step Leader’s Guides to support new and experienced facilitators (includes guided group discussion and interactive activities).</li>
+              <li>Parent’s Guides with home activities to reinforce learning between sessions.</li>
+              <li>Content that aligns with PFCE outcomes around well-being, relationships, and learning.</li>
+              <li>Skill modeling embedded in slide presentations that are easy for leaders to use.</li>
+            </ul>
+            <a class="btn-outline"
+               href="https://activeparenting.com/product/first-five-years-of-parenting/"
+               target="_blank" rel="noopener noreferrer">
+              View First Five Years program details
+            </a>
+          </div>
+          <div class="pfce-feature-image-wrap">
+            <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/Active-Parenting-First-Five-Years-Program-Kit-1680.png"
+                 alt="Active Parenting: First Five Years Program Kit">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION: ABOUT ACTIVE PARENTING -->
+    <!-- SECTION: ABOUT ACTIVE PARENTING (no 'Our approach' block) -->
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">About Active Parenting</div>
         <h2 class="section-title">Evidence-based, video-based, and interactive</h2>
         <p class="section-intro">
-          Active Parenting has provided evidence-based, video-based parenting education since 1983. Our programs are
-          used in schools, community agencies, courts, and Head Start programs across the country.
+          Active Parenting has provided evidence-based, video-based parenting education since 1983. Our
+          programs are used in schools, community agencies, courts, and Head Start programs across the country.
         </p>
       </div>
 
@@ -933,85 +828,40 @@
           <div class="about-icon eb">✓</div>
           <h3>Evidence-Based</h3>
           <p>
-            Our programs are backed by independent research and proven effective through studies and real-world
-            implementation in diverse communities.
+            Our programs are backed by independent research and proven effective through studies and
+            real-world implementation in diverse communities.
           </p>
         </article>
         <article class="card">
           <div class="about-icon vb">▶</div>
           <h3>Video-Based</h3>
           <p>
-            Brief video vignettes with professional actors model key skills and show real-life situations that families
-            recognize and want to talk about.
+            Brief video vignettes with professional actors model key skills and show real-life situations
+            that families recognize and want to talk about.
           </p>
         </article>
         <article class="card">
           <div class="about-icon int">👥</div>
           <h3>Interactive</h3>
           <p>
-            Sessions are designed for engagement through group discussion, role-playing, and activities that reinforce
-            learning and build connection.
+            Sessions are designed for engagement through group discussion, role-playing, and activities
+            that reinforce learning and build connection.
           </p>
         </article>
       </div>
-
-      <div class="about-approach card">
-        <h3 style="margin-bottom:6px;">Our approach</h3>
-        <p style="font-size:15px;color:#4f5a6b;margin-bottom:8px;">
-          For over 40 years, we’ve found that the most effective and cost-effective way to teach parenting education
-          includes:
-        </p>
-        <ul class="list-compact">
-          <li>Brief video vignettes using professional actors to model both pitfalls and positive skills.</li>
-          <li>Skill modeling embedded in slide presentations that are easy for leaders to use.</li>
-          <li>Guided group discussion and interactive activities.</li>
-          <li>Parent’s Guides with home activities to reinforce learning between sessions.</li>
-          <li>Step-by-step Leader’s Guides to support new and experienced facilitators.</li>
-        </ul>
-        <p style="font-size:15px;color:#4f5a6b;margin-top:8px;">
-          Our programs are trusted by judges, juvenile courts, schools, and social service agencies across the country
-          for their effectiveness and engaging approach.
-        </p>
-      </div>
     </section>
 
-    <!-- SECTION: CONFERENCE OFFER -->
-    <section class="section" id="conference-offer">
-      <div class="section-header">
-        <div class="section-kicker">Conference thank-you</div>
-        <h2 class="section-title">Your exclusive Head Start offer</h2>
-        <p class="section-intro">
-          As a thank-you for connecting with us at the conference, we are extending a special discount on your first
-          Active Parenting program kit order.
-        </p>
-      </div>
-
-      <div class="offer-card">
-        <h2>20% off your first program kit</h2>
-        <p>
-          When you enroll in the giveaway and eNews, you will receive a unique 20% off code by email that can be used
-          toward your first Active Parenting program kit, including <em>First Five Years</em>. Share the code with your
-          purchasing team so they can apply it at checkout.
-        </p>
-        <p style="margin-top:10px;font-size:13px;color:#7b8394;">
-          Valid for new orders from Head Start and Early Head Start programs. Discount code will be delivered via email
-          after you sign up through the form above.
-        </p>
-      </div>
-    </section>
-
-    <!-- SECTION: CONNECT WITH OUR TEAM -->
+    <!-- SECTION: YOUR HEAD START SUPPORT TEAM -->
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">Your Head Start support team</div>
-        <h2 class="section-title">We’re here to help you plan</h2>
+        <h2 class="section-title">We’re here to help</h2>
         <p class="section-intro">
-          Whether you are new to Active Parenting or expanding an existing initiative, our team can help you select
-          materials, schedule training, and align with your Head Start performance standards.
+          Whether you are new to Active Parenting or expanding an existing initiative, our team can help you
+          select materials, schedule training, and align with your Head Start performance standards.
         </p>
         <p class="section-intro" style="margin-top:6px;">
-          Stay connected. Get a FREE 15-Day Preview, pricing, and implementation support tailored to your site’s
-          family engagement goals.
+          Stay connected. Get a FREE 15-Day Preview, pricing, and implementation support.
         </p>
       </div>
 
@@ -1023,7 +873,7 @@
               <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/30.png" alt="Micole Mason">
             </div>
           </div>
-          <div class="team-name">Micole Mason</div>
+          <div class="team-name">Micol&eacute; Mason</div>
           <div class="team-title">Sales &amp; Training Manager</div>
           <a class="team-btn micole"
              href="https://activeparenting.my.canva.site/meet-our-team"
@@ -1032,7 +882,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 120<br>
-            cell: 470-504-3478<br>
+            Cell: 470-504-3478<br>
             <a href="mailto:Micole@ActiveParenting.com">Micole@ActiveParenting.com</a>
           </div>
         </article>
@@ -1053,7 +903,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 146<br>
-            cell: 404-719-0661<br>
+            Cell: 404-719-0661<br>
             <a href="mailto:Bradley@ActiveParenting.com">Bradley@ActiveParenting.com</a>
           </div>
         </article>
@@ -1074,7 +924,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 105<br>
-            cell: 770-370-5877<br>
+            Cell: 770-370-5877<br>
             <a href="mailto:Eryn@ActiveParenting.com">Eryn@ActiveParenting.com</a>
           </div>
         </article>
@@ -1181,10 +1031,6 @@
       </p>
     </footer>
   </div>
-
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47817909.js"></script>
-  <!-- End of HubSpot Embed Code -->
 </body>
 </html>
 
