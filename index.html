@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Active Parenting: First Five Years resources for Head Start and Early Head Start programs, including PFCE alignment and a conference discount code for new orders."
+    content="Active Parenting: First Five Years resources for Head Start and Early Head Start programs, including PFCE alignment and a conference discount on new orders."
   />
 
   <style>
@@ -137,7 +137,6 @@
       line-height: 1.15;
       margin-bottom: 10px;
       font-weight: 700;
-      font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     .hero-subtitle {
@@ -174,7 +173,6 @@
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
       transition: transform 0.08s ease, box-shadow 0.08s ease;
       text-decoration: none;
-      font-family: inherit;
     }
 
     .btn-primary span {
@@ -200,10 +198,9 @@
       font-weight: 600;
       backdrop-filter: blur(4px);
       text-decoration: none;
-      font-family: inherit;
     }
 
-    /* BIGGER, CENTERED DISCOUNT PILL */
+    /* DISCOUNT PILL – NO CODE SHOWN */
     .discount-pill {
       margin-top: 18px;
       display: flex;
@@ -218,18 +215,6 @@
       font-weight: 700;
       text-align: center;
       max-width: 520px;
-    }
-
-    .discount-pill-code {
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: #ffffff;
-      color: var(--purple);
-      font-weight: 800;
-      font-size: 15px;
-      letter-spacing: 0.08em;
-      font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      text-transform: uppercase;
     }
 
     /* --------- PILL NAV --------- */
@@ -351,7 +336,7 @@
     }
 
     .list-compact {
-      font-size: 16px; /* bigger bullets */
+      font-size: 16px;
       color: #4f5a6b;
       padding-left: 22px;
       margin-top: 8px;
@@ -395,7 +380,6 @@
       font-weight: 700;
       text-decoration: none;
       margin-top: 12px;
-      font-family: inherit;
     }
 
     .btn-outline:hover {
@@ -509,7 +493,6 @@
       font-weight:700;
       text-decoration:none;
       margin-bottom:8px;
-      font-family: inherit;
     }
 
     .team-btn.micole { background:#d7263d; }
@@ -654,69 +637,39 @@
       color:#4f5a6b;
     }
 
-    .offer-code-pill {
-      display:inline-flex;
-      align-items:center;
-      padding:6px 11px;
-      border-radius:999px;
-      background:#ffffff;
-      border:1px dashed #f7941d;
-      margin-top:8px;
-      font-size:14px;
-      font-weight:600;
-      color:#c85000;
-    }
-
-    .offer-code-pill span {
-      background:#f7941d;
-      color:#ffffff;
-      border-radius:999px;
-      padding:2px 8px;
-      margin-left:8px;
-      font-family:monospace;
-      letter-spacing:0.08em;
-    }
-
-    /* ---- STAY CONNECTED FORM CARD ---- */
-    .section-form-card {
+    /* SIGNUP CARD (FORM + COPY, SINGLE COLUMN) */
+    .signup-card {
       background:#ffffff;
       border-radius:20px;
       border:1px solid var(--border-soft);
-      box-shadow:0 14px 40px rgba(15,27,51,0.08);
-      padding:20px 20px 22px;
-      display:grid;
-      grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
-      gap:20px;
-      align-items:flex-start;
-      margin-bottom:32px;
+      box-shadow:var(--shadow-soft);
+      padding:20px 18px 24px;
+      max-width:960px;
+      margin:0 auto;
     }
 
-    .section-form-card .form-column {
-      min-width:0;
-    }
-
-    .section-form-card .copy-column {
-      min-width:0;
-    }
-
-    .section-form-card h2 {
+    .signup-card h2 {
       font-size:20px;
+      font-weight:700;
       margin-bottom:4px;
     }
 
-    .section-form-card p {
+    .signup-card h3 {
+      font-size:17px;
+      font-weight:700;
+      margin-top:10px;
+      margin-bottom:4px;
+    }
+
+    .signup-card p {
       font-size:15px;
       color:#4f5a6b;
-      margin-bottom:8px;
+      margin-bottom:6px;
+      max-width:780px;
     }
 
-    .section-form-card strong {
-      font-weight:700;
-    }
-
-    .section-form-card .hs-form-frame {
-      width:100%;
-      max-width:100%;
+    .signup-form-embed {
+      margin-top:14px;
     }
 
     /* RESPONSIVE */
@@ -737,10 +690,6 @@
 
       .hero-photo-secondary {
         margin-left: 10px;
-      }
-
-      .section-form-card {
-        grid-template-columns:minmax(0,1fr);
       }
     }
 
@@ -770,10 +719,6 @@
       }
     }
   </style>
-
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47817909.js"></script>
-  <!-- End of HubSpot Embed Code -->
 </head>
 
 <body>
@@ -802,14 +747,12 @@
             Learn about First Five Years <span>↓</span>
           </a>
           <a href="#conference-offer" class="btn-ghost">
-            View your 20% off conference offer
+            View your conference discount
           </a>
         </div>
 
         <div class="discount-pill">
-          Conference thank-you:
-          <span class="discount-pill-code">Code: 26C01</span>
-          20% off your first order
+          Conference thank-you: 20% off your first order
         </div>
       </div>
 
@@ -825,47 +768,6 @@
         </div>
       </div>
     </header>
-
-    <!-- STAY CONNECTED / FORM CARD (directly under hero) -->
-    <section class="section" id="stay-connected">
-      <div class="section-form-card">
-        <!-- LEFT: FORM -->
-        <div class="form-column">
-          <!-- Form embed -->
-          <script src="https://js.hsforms.net/forms/embed/47817909.js" defer></script>
-          <div class="hs-form-frame"
-               data-region="na1"
-               data-form-id="715af43c-9945-4dbe-998a-e5668b5ee35d"
-               data-portal-id="47817909">
-          </div>
-        </div>
-
-        <!-- RIGHT: COPY -->
-        <div class="copy-column">
-          <div class="section-header" style="margin-bottom:8px;">
-            <div class="section-kicker">Stay connected</div>
-            <h2 class="section-title">Get samples, pricing, and implementation support</h2>
-          </div>
-          <p>
-            Sign up below to receive your <strong>20% discount</strong>, Head Start–focused resources, and ongoing
-            implementation support.
-          </p>
-          <p>
-            <strong>Don’t miss out!</strong> Enter to win a FREE <em>Active Parenting: First Five Years</em> Standard
-            Program Kit and get your exclusive 20% discount.
-          </p>
-          <p>
-            Sign up for our free eNews and you’ll be <strong>automatically entered into the giveaway</strong>—plus,
-            everyone who signs up receives <strong>20% off any program kit</strong>.
-          </p>
-          <p>
-            By signing up, you are automatically entered to win a FREE <em>Active Parenting: First Five Years</em>
-            Program Kit ($499 value) and will receive your guaranteed 20% off code via email. Explore how First Five
-            Years aligns with your PFCE goals for Head Start and Early Head Start families.
-          </p>
-        </div>
-      </div>
-    </section>
 
     <!-- PILL NAV -->
     <div class="pill-nav-wrap">
@@ -885,17 +787,45 @@
       </nav>
     </div>
 
+    <!-- SIGNUP / FORM CARD -->
+    <section class="section" id="signup">
+      <div class="signup-card">
+        <div class="section-kicker">Stay connected</div>
+        <h2>Get samples, pricing, and implementation support</h2>
+        <p>
+          Sign up below to receive your <strong>20% conference discount</strong>, Head Start–focused resources, and
+          ongoing implementation support.
+        </p>
+        <h3>Don’t miss out!</h3>
+        <p>
+          Enter to win a <strong>FREE Active Parenting: First Five Years Standard Program Kit</strong> (a $499 value) and
+          get your exclusive 20% discount on any program kit.
+        </p>
+        <p>
+          By signing up for our free eNews, you’ll be automatically entered into the giveaway—and everyone who signs up
+          receives 20% off any program kit. You’ll also receive a brief overview of how First Five Years supports PFCE
+          outcomes for Head Start and Early Head Start families.
+        </p>
+
+        <div class="signup-form-embed">
+          <script src="https://js.hsforms.net/forms/embed/47817909.js" defer></script>
+          <div class="hs-form-frame"
+               data-region="na1"
+               data-form-id="715af43c-9945-4dbe-998a-e5668b5ee35d"
+               data-portal-id="47817909"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION: PFCE -->
     <section class="section" id="pfce">
       <div class="section-header">
         <div class="section-kicker">Head Start alignment</div>
         <h2 class="section-title">How Active Parenting supports the PFCE Framework</h2>
         <p class="section-intro">
-          The Active Parenting: First Five Years curriculum is designed to help your program build strong,
-          goal-oriented relationships with families and align seamlessly with the Head Start Parent, Family, and
-          Community Engagement (PFCE) Framework. Explore how our evidence-backed, video-based approach supports
-          key family outcomes like well-being, positive parent-child relationships, and families as lifelong
-          educators.
+          The Head Start Parent, Family, and Community Engagement (PFCE) Framework is a road map for building strong,
+          goal-oriented relationships with families. Active Parenting: First Five Years was designed to support key
+          family outcomes like well-being, positive parent-child relationships, and families as lifelong educators.
         </p>
       </div>
 
@@ -953,7 +883,7 @@
             <li>Age-appropriate video vignettes that reflect real-life parenting situations families recognize.</li>
             <li>Flexible formats for home visits, small parent groups, or family engagement events.</li>
             <li>Skill modeling embedded in slide presentations that are easy for leaders to use.</li>
-            <li>Step-by-step Leader’s Guides to support new and experienced facilitators, including guided discussion and interactive activities.</li>
+            <li>Step-by-step Leader’s Guides to support new and experienced facilitators.</li>
             <li>Parent’s Guides with home activities to reinforce learning between sessions.</li>
             <li>Content that aligns with PFCE outcomes around well-being, relationships, and learning.</li>
           </ul>
@@ -969,12 +899,11 @@
     <!-- SECTION: ABOUT ACTIVE PARENTING -->
     <section class="section">
       <div class="section-header">
-        <div class="section-kicker">Why Active Parenting is trusted by Head Start programs</div>
-        <h2 class="section-title">Evidence-backed, video-based, and interactive</h2>
+        <div class="section-kicker">About Active Parenting</div>
+        <h2 class="section-title">Evidence-based, video-based, and interactive</h2>
         <p class="section-intro">
-          Active Parenting has been the trusted source for evidence-backed, video-based parenting education since 1983.
-          Our programs are successfully implemented in diverse settings—from schools and community agencies to courts
-          and Head Start programs across the country.
+          Active Parenting has provided evidence-based, video-based parenting education since 1983. Our programs are
+          used in schools, community agencies, courts, and Head Start programs across the country.
         </p>
       </div>
 
@@ -983,13 +912,8 @@
           <div class="about-icon eb">✓</div>
           <h3>Evidence-Based</h3>
           <p>
-            Our programs are backed by independent research and proven effective through studies and real-world
-            implementation in diverse communities.
-            <br><br>
-            <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/leader-training/first-five-years-of-parenting-research-data/"
-               target="_blank" rel="noopener noreferrer">
-              View independent research
-            </a>
+            Our programs are backed by research and proven effective through studies and real-world implementation in
+            diverse communities.
           </p>
         </article>
         <article class="card">
@@ -1036,7 +960,7 @@
         <div class="section-kicker">Conference thank-you</div>
         <h2 class="section-title">Your exclusive Head Start offer</h2>
         <p class="section-intro">
-          As a thank-you for connecting with us at the conference, we are extending a special discount on your first
+          As a thank-you for connecting with us at the conference, we’re extending a special discount on your first
           Active Parenting order.
         </p>
       </div>
@@ -1044,15 +968,12 @@
       <div class="offer-card">
         <h2>20% off your first order</h2>
         <p>
-          Use this code when you place your first order for Active Parenting materials, including First Five Years, and
-          share it with your purchasing team so they know it is tied to the conference.
+          When your team signs up using the form above, you’ll receive an email with your conference discount and simple
+          instructions for applying it to your first order of Active Parenting materials, including First Five Years.
         </p>
-        <div class="offer-code-pill">
-          Conference code: <span>26C01</span>
-        </div>
         <p style="margin-top:10px;font-size:13px;color:#7b8394;">
-          Valid for new orders from Head Start and Early Head Start programs. Please include code 26C01 when ordering
-          online or by phone to receive your 20% discount.
+          Valid for new orders from Head Start and Early Head Start programs. Please share the email with your
+          purchasing team so they can apply the discount when you’re ready to order.
         </p>
       </div>
     </section>
@@ -1061,13 +982,13 @@
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">Your Head Start support team</div>
-        <h2 class="section-title">We’re here to help</h2>
+        <h2 class="section-title">We’re here to help you plan</h2>
         <p class="section-intro">
           Whether you are new to Active Parenting or expanding an existing initiative, our team can help you select
           materials, schedule training, and align with your Head Start performance standards.
         </p>
         <p class="section-intro" style="margin-top:6px;">
-          <strong>Stay connected.</strong> Get a FREE 15-Day Preview, pricing, and implementation support.
+          Stay connected. Get a FREE 15-Day Preview, pricing, and implementation support.
         </p>
       </div>
 
@@ -1076,10 +997,10 @@
         <article class="team-card">
           <div class="team-avatar-wrap">
             <div class="team-avatar">
-              <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/30.png" alt="Micole Mason">
+              <img src="https://47817909.fs1.hubspotusercontent-na1.net/hubfs/47817909/30.png" alt="Micolé Mason">
             </div>
           </div>
-          <div class="team-name">Micole Mason</div>
+          <div class="team-name">Micolé Mason</div>
           <div class="team-title">Sales &amp; Training Manager</div>
           <a class="team-btn micole"
              href="https://activeparenting.my.canva.site/meet-our-team"
@@ -1088,7 +1009,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 120<br>
-            Cell: 470-504-3478<br>
+            cell: 470-504-3478<br>
             <a href="mailto:Micole@ActiveParenting.com">Micole@ActiveParenting.com</a>
           </div>
         </article>
@@ -1109,7 +1030,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 146<br>
-            Cell: 404-719-0661<br>
+            cell: 404-719-0661<br>
             <a href="mailto:Bradley@ActiveParenting.com">Bradley@ActiveParenting.com</a>
           </div>
         </article>
@@ -1130,7 +1051,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 105<br>
-            Cell: 770-370-5877<br>
+            cell: 770-370-5877<br>
             <a href="mailto:Eryn@ActiveParenting.com">Eryn@ActiveParenting.com</a>
           </div>
         </article>
@@ -1209,6 +1130,10 @@
         </a>
       </div>
     </section>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47817909.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
     <!-- CORPORATE FOOTER / ADDRESS -->
     <div class="corp-footer">
