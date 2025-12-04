@@ -677,6 +677,48 @@
       letter-spacing:0.08em;
     }
 
+    /* ---- STAY CONNECTED FORM CARD ---- */
+    .section-form-card {
+      background:#ffffff;
+      border-radius:20px;
+      border:1px solid var(--border-soft);
+      box-shadow:0 14px 40px rgba(15,27,51,0.08);
+      padding:20px 20px 22px;
+      display:grid;
+      grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);
+      gap:20px;
+      align-items:flex-start;
+      margin-bottom:32px;
+    }
+
+    .section-form-card .form-column {
+      min-width:0;
+    }
+
+    .section-form-card .copy-column {
+      min-width:0;
+    }
+
+    .section-form-card h2 {
+      font-size:20px;
+      margin-bottom:4px;
+    }
+
+    .section-form-card p {
+      font-size:15px;
+      color:#4f5a6b;
+      margin-bottom:8px;
+    }
+
+    .section-form-card strong {
+      font-weight:700;
+    }
+
+    .section-form-card .hs-form-frame {
+      width:100%;
+      max-width:100%;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 900px) {
       .hero {
@@ -695,6 +737,10 @@
 
       .hero-photo-secondary {
         margin-left: 10px;
+      }
+
+      .section-form-card {
+        grid-template-columns:minmax(0,1fr);
       }
     }
 
@@ -724,6 +770,10 @@
       }
     }
   </style>
+
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/47817909.js"></script>
+  <!-- End of HubSpot Embed Code -->
 </head>
 
 <body>
@@ -776,6 +826,47 @@
       </div>
     </header>
 
+    <!-- STAY CONNECTED / FORM CARD (directly under hero) -->
+    <section class="section" id="stay-connected">
+      <div class="section-form-card">
+        <!-- LEFT: FORM -->
+        <div class="form-column">
+          <!-- Form embed -->
+          <script src="https://js.hsforms.net/forms/embed/47817909.js" defer></script>
+          <div class="hs-form-frame"
+               data-region="na1"
+               data-form-id="715af43c-9945-4dbe-998a-e5668b5ee35d"
+               data-portal-id="47817909">
+          </div>
+        </div>
+
+        <!-- RIGHT: COPY -->
+        <div class="copy-column">
+          <div class="section-header" style="margin-bottom:8px;">
+            <div class="section-kicker">Stay connected</div>
+            <h2 class="section-title">Get samples, pricing, and implementation support</h2>
+          </div>
+          <p>
+            Sign up below to receive your <strong>20% discount</strong>, Head Start–focused resources, and ongoing
+            implementation support.
+          </p>
+          <p>
+            <strong>Don’t miss out!</strong> Enter to win a FREE <em>Active Parenting: First Five Years</em> Standard
+            Program Kit and get your exclusive 20% discount.
+          </p>
+          <p>
+            Sign up for our free eNews and you’ll be <strong>automatically entered into the giveaway</strong>—plus,
+            everyone who signs up receives <strong>20% off any program kit</strong>.
+          </p>
+          <p>
+            By signing up, you are automatically entered to win a FREE <em>Active Parenting: First Five Years</em>
+            Program Kit ($499 value) and will receive your guaranteed 20% off code via email. Explore how First Five
+            Years aligns with your PFCE goals for Head Start and Early Head Start families.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- PILL NAV -->
     <div class="pill-nav-wrap">
       <nav class="pill-nav" aria-label="Active Parenting primary links">
@@ -800,9 +891,11 @@
         <div class="section-kicker">Head Start alignment</div>
         <h2 class="section-title">How Active Parenting supports the PFCE Framework</h2>
         <p class="section-intro">
-          The Head Start Parent, Family, and Community Engagement (PFCE) Framework is a road map for building strong,
-          goal-oriented relationships with families. Active Parenting: First Five Years was designed to support key
-          family outcomes like well-being, positive parent-child relationships, and families as lifelong educators.
+          The Active Parenting: First Five Years curriculum is designed to help your program build strong,
+          goal-oriented relationships with families and align seamlessly with the Head Start Parent, Family, and
+          Community Engagement (PFCE) Framework. Explore how our evidence-backed, video-based approach supports
+          key family outcomes like well-being, positive parent-child relationships, and families as lifelong
+          educators.
         </p>
       </div>
 
@@ -859,8 +952,9 @@
           <ul class="list-compact">
             <li>Age-appropriate video vignettes that reflect real-life parenting situations families recognize.</li>
             <li>Flexible formats for home visits, small parent groups, or family engagement events.</li>
-            <li>Parent’s Guides with simple activities that connect home routines to school readiness goals.</li>
-            <li>Leader’s materials that make it easy to orient new staff and keep facilitation quality consistent.</li>
+            <li>Skill modeling embedded in slide presentations that are easy for leaders to use.</li>
+            <li>Step-by-step Leader’s Guides to support new and experienced facilitators, including guided discussion and interactive activities.</li>
+            <li>Parent’s Guides with home activities to reinforce learning between sessions.</li>
             <li>Content that aligns with PFCE outcomes around well-being, relationships, and learning.</li>
           </ul>
           <a class="btn-outline"
@@ -875,11 +969,12 @@
     <!-- SECTION: ABOUT ACTIVE PARENTING -->
     <section class="section">
       <div class="section-header">
-        <div class="section-kicker">About Active Parenting</div>
-        <h2 class="section-title">Evidence-based, video-based, and interactive</h2>
+        <div class="section-kicker">Why Active Parenting is trusted by Head Start programs</div>
+        <h2 class="section-title">Evidence-backed, video-based, and interactive</h2>
         <p class="section-intro">
-          Active Parenting has provided evidence-based, video-based parenting education since 1983. Our programs are
-          used in schools, community agencies, courts, and Head Start programs across the country.
+          Active Parenting has been the trusted source for evidence-backed, video-based parenting education since 1983.
+          Our programs are successfully implemented in diverse settings—from schools and community agencies to courts
+          and Head Start programs across the country.
         </p>
       </div>
 
@@ -888,8 +983,13 @@
           <div class="about-icon eb">✓</div>
           <h3>Evidence-Based</h3>
           <p>
-            Our programs are backed by research and proven effective through studies and real-world implementation in
-            diverse communities.
+            Our programs are backed by independent research and proven effective through studies and real-world
+            implementation in diverse communities.
+            <br><br>
+            <a href="https://activeparenting.com/for-leaders/research-studies-tools-and-tests/leader-training/first-five-years-of-parenting-research-data/"
+               target="_blank" rel="noopener noreferrer">
+              View independent research
+            </a>
           </p>
         </article>
         <article class="card">
@@ -961,20 +1061,13 @@
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">Your Head Start support team</div>
-        <h2 class="section-title">We’re here to help you plan</h2>
+        <h2 class="section-title">We’re here to help</h2>
         <p class="section-intro">
           Whether you are new to Active Parenting or expanding an existing initiative, our team can help you select
           materials, schedule training, and align with your Head Start performance standards.
         </p>
         <p class="section-intro" style="margin-top:6px;">
-          <strong>Stay connected.</strong> Get samples, pricing, and implementation support. Share your information
-          below to receive digital samples, ideas for aligning Active Parenting with your program goals, and an optional
-          follow-up conversation after the conference.
-        </p>
-        <p class="section-intro" style="margin-top:6px;">
-          Since you have already shared your information by joining at our booth, our team will follow up with you using
-          the details you provided. If you would like to add colleagues to the list, simply share this page and have
-          them contact us directly.
+          <strong>Stay connected.</strong> Get a FREE 15-Day Preview, pricing, and implementation support.
         </p>
       </div>
 
@@ -995,7 +1088,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 120<br>
-            cell: 470-504-3478<br>
+            Cell: 470-504-3478<br>
             <a href="mailto:Micole@ActiveParenting.com">Micole@ActiveParenting.com</a>
           </div>
         </article>
@@ -1016,7 +1109,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 146<br>
-            cell: 404-719-0661<br>
+            Cell: 404-719-0661<br>
             <a href="mailto:Bradley@ActiveParenting.com">Bradley@ActiveParenting.com</a>
           </div>
         </article>
@@ -1037,7 +1130,7 @@
           </a>
           <div class="team-contact">
             800-825-0060 ext. 105<br>
-            cell: 770-370-5877<br>
+            Cell: 770-370-5877<br>
             <a href="mailto:Eryn@ActiveParenting.com">Eryn@ActiveParenting.com</a>
           </div>
         </article>
@@ -1146,5 +1239,6 @@
   </div>
 </body>
 </html>
+
 
 
